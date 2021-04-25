@@ -53,9 +53,17 @@ public class CookieAndSessionServlet extends HelloServlet {
 默认是只要关闭浏览器就销毁，我们通过 setMaxAge()
 ⽅法设置有效期，⼀旦设置了有效期，则不随浏览器的关闭⽽销毁，⽽是由设置的时间来决定。
 
-继续学习Cookie网上有很多资料可参考： 
+3.4 继续学习Cookie网上有很多资料可参考：cookie技术不仅后端有，前端也有
 
-[1.菜鸟教程链接](https://www.runoob.com/servlet/servlet-cookies-handling.html)  
+[1.菜鸟教程servlet-cookies](https://www.runoob.com/servlet/servlet-cookies-handling.html)  
+[2.菜鸟教程Js-cookies](https://www.runoob.com/js/js-cookies.html)
+[3.技术博客1](https://mp.weixin.qq.com/s/JW7mxXEqrV1rZ_pQOteXGQ)
+[4.技术博客2](https://www.cnblogs.com/xdp-gacl/p/3803033.html)
+
+3.5 SpringBoot中使用Cookie技术及实现自动登陆功能
+
+[参考博客1](https://www.cnblogs.com/zimug/p/11785225.html)
+[参考博客2](https://www.yisu.com/zixun/232453.html)
 
 ### 4.Session
 
@@ -63,12 +71,3 @@ public class CookieAndSessionServlet extends HelloServlet {
 
 Session和Cookie一样，也是用来保存验证用户请求信息的，它会把客户端传来的Cookie信息和服务端的Session信息进行比较，看是否相同，若相同则
 说明是同一用户的，通过验证，否则说明不是，验证不会通过。
-
-
-
-
-
-
-
-
-​    
