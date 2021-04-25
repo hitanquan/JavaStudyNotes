@@ -12,16 +12,63 @@
 
     1.登录中的“记住我”功能或“下次自动登录”功能.
     2.加入商品到购物车功能.
-    
+
 ### 3.Cookie：
 
 3.1 什么是Cookie?
 
-Cookie是存储在客户端计算机上的文本文件，保留了各种跟踪信息,主要是将服务器发送过来的用户信息保存起来，以便于浏览器下次向服务器发起请求时，服务器知道是谁发来的请求，从而完成用户验证。
+Cookie是存储在客户端计算机上的文本文件，保留了各种跟踪信息，主要是将服务器发送过来的用户信息保存起来，以便于浏览器下次向服务器发起请求时，服务器知道是谁发来的请求，从而完成用户验证。
+
+简单点说，Cookie就是由服务端创建，通过响应体传给并保存在客户端的可用于通过请求验证的数据凭证。
+
+3.2 创建和读取Cookie
+
+- 代码：
+
+```java
+@WebServlet("/cs")
+public class CookieAndSessionServlet extends HelloServlet {
+    @Override
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        //创建cookie对象
+        Cookie cookie = new Cookie("name", "zhangsan");
+        //添加到响应体
+        response.addCookie(cookie);
+        
+        //读取客户端的cookie信息
+        Cookie[] cookies = request.getCookies();
+        for (Cookie ck : cookies) {
+            System.out.println(ck.getName()+":"+ck.getValue());
+        }
+    }
+}
+```
+
+- 浏览器控制台示例图：
+
+![cookie](/Users/tanquan/后端/mycode/JavaStudyNotes/img/cookie.png)
+
+3.3 生命周期
+
+默认是只要关闭浏览器就销毁，我们通过 setMaxAge()
+⽅法设置有效期，⼀旦设置了有效期，则不随浏览器的关闭⽽销毁，⽽是由设置的时间来决定。
 
 继续学习Cookie网上有很多资料可参考： 
 
 [1.菜鸟教程链接](https://www.runoob.com/servlet/servlet-cookies-handling.html)  
 
+### 4.Session
 
-    
+4.1 什么是Session？
+
+Session和Cookie一样，也是用来保存验证用户请求信息的，它会把客户端传来的Cookie信息和服务端的Session信息进行比较，看是否相同，若相同则
+说明是同一用户的，通过验证，否则说明不是，验证不会通过。
+
+
+
+
+
+
+
+
+​    

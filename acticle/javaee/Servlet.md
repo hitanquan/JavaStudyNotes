@@ -19,6 +19,9 @@
 最常用的是第三种方式。
 
 ### 4.Servlet的生命周期    
+    当tomcat启动后，第一次访问servlet时，servlet对象创建，之后调用init()初始化方法进行属性初始化，之后doGet()或doPost()方法被调用，用于
+    处理浏览器请求，当tomcat停止后，destory()方法被调用。整个过程中，init()方法和destory()方法只被调用一次，而处理请求的doGet()或doPost()方法每
+    请求一次就调用一次。
 
 ### 5.参考学习教程：
 
