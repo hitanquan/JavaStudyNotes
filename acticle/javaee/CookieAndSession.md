@@ -46,7 +46,7 @@ public class CookieAndSessionServlet extends HelloServlet {
 
 - 浏览器控制台示例图：
 
-![cookie](/Users/tanquan/后端/mycode/JavaStudyNotes/img/cookie.png)
+![cookie](../../img/cookie.png)
 
 3.3 生命周期
 
@@ -59,7 +59,7 @@ public class CookieAndSessionServlet extends HelloServlet {
 [2.菜鸟教程Js-cookies](https://www.runoob.com/js/js-cookies.html) <br>
 [3.技术博客1](https://mp.weixin.qq.com/s/JW7mxXEqrV1rZ_pQOteXGQ) <br>
 [4.技术博客2](https://www.cnblogs.com/xdp-gacl/p/3803033.html) <br>
-[5.js-cookie的github仓库-](https://github.com/js-cookie/js-cookie)
+[5.js-cookie的github仓库](https://github.com/js-cookie/js-cookie)
 
 3.5 SpringBoot中使用Cookie技术及实现自动登陆功能
 
