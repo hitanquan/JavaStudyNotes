@@ -55,15 +55,16 @@ public class CookieAndSessionServlet extends HelloServlet {
 
 3.4 继续学习Cookie网上有很多资料可参考：cookie技术不仅后端有，前端也有
 
-[1.菜鸟教程servlet-cookies](https://www.runoob.com/servlet/servlet-cookies-handling.html)  
-[2.菜鸟教程Js-cookies](https://www.runoob.com/js/js-cookies.html)
-[3.技术博客1](https://mp.weixin.qq.com/s/JW7mxXEqrV1rZ_pQOteXGQ)
-[4.技术博客2](https://www.cnblogs.com/xdp-gacl/p/3803033.html)
+[1.菜鸟教程servlet-cookies](https://www.runoob.com/servlet/servlet-cookies-handling.html) <br>
+[2.菜鸟教程Js-cookies](https://www.runoob.com/js/js-cookies.html) <br>
+[3.技术博客1](https://mp.weixin.qq.com/s/JW7mxXEqrV1rZ_pQOteXGQ) <br>
+[4.技术博客2](https://www.cnblogs.com/xdp-gacl/p/3803033.html) <br>
+[5.js-cookie的github仓库-](https://github.com/js-cookie/js-cookie)
 
 3.5 SpringBoot中使用Cookie技术及实现自动登陆功能
 
-[参考博客1](https://www.cnblogs.com/zimug/p/11785225.html)
-[参考博客2](https://www.yisu.com/zixun/232453.html)
+[参考博客1](https://www.cnblogs.com/zimug/p/11785225.html) <br>
+[参考博客2](https://www.yisu.com/zixun/232453.html) 
 
 ### 4.Session
 
