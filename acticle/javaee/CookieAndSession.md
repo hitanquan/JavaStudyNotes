@@ -21,6 +21,10 @@ Cookie是存储在客户端计算机上的文本文件，保留了各种跟踪�
 
 简单点说，Cookie就是由服务端创建，通过响应体传给并保存在客户端的可用于通过请求验证的数据凭证。
 
+百度知道一篇对cookie的介绍：
+
+![cookie介绍](../../img/cookie的介绍.png)
+
 3.2 创建和读取Cookie
 
 - 代码：
@@ -44,9 +48,9 @@ public class CookieAndSessionServlet extends HelloServlet {
 }
 ```
 
-- 浏览器控制台示例图：
+- 浏览器控制台cookie数据示例图：
 
-![cookie](../../img/cookie.png)
+![浏览器控制台cookie数据](../../img/浏览器控制台cookie信息.png)
 
 3.3 生命周期
 
